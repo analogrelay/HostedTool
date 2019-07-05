@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Contrib.Extensions.Hosting.Tool;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace SampleTool
@@ -11,12 +9,7 @@ namespace SampleTool
     {
         private readonly ILogger<Program> _logger;
 
-        internal static Task Main(string[] args) => CreateHostBuilder(args).RunToolAsync();
-
-        internal static IHostBuilder CreateHostBuilder(string[] args)
-        {
-            return ToolHost.CreateDefaultBuilder(args);
-        }
+        internal static Task Main(string[] args) => ToolHost.CreateDefaultBuilder(args).RunToolAsync();
 
         public Program(ILogger<Program> logger)
         {

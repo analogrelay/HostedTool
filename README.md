@@ -7,12 +7,7 @@ internal class Program
 {
     private readonly ILogger<Program> _logger;
 
-    internal static Task Main(string[] args) => CreateHostBuilder(args).RunToolAsync();
-
-    internal static IHostBuilder CreateHostBuilder(string[] args)
-    {
-        return ToolHost.CreateDefaultBuilder(args);
-    }
+    internal static Task Main(string[] args) => ToolHost.CreateDefaultBuilder(args).RunToolAsync();
 
     public Program(ILogger<Program> logger)
     {
