@@ -1,5 +1,14 @@
 # Microsoft.Extensions.Hosting + System.CommandLine = 😁
 
+## Features
+
+* Argument Parsing 🏫
+* Automatic Help from Doc Comments 🆘️
+* Cancellation Token automatically wired to Ctrl-C 🛑
+* Dependency Injection 💉
+* Logging 🪓
+* Tab Completion (via `dotnet-suggest`) 💡
+
 ## Example
 
 ```csharp

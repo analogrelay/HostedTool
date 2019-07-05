@@ -4,14 +4,16 @@
         <name>sample-tool</name>
     </assembly>
     <members>
-        <member name="M:SampleTool.Program.ExecuteAsync(System.String,System.Boolean,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String})">
+        <member name="M:SampleTool.Program.ExecuteAsync(System.String,System.Int32,System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Threading.CancellationToken)">
             <summary>
             Does simple things.
             </summary>
-            <param name="simpleOption">A simple string option.</param>
-            <param name="boolOption">A boolean option.</param>
-            <param name="optionalInt">An optional integer.</param>
-            <param name="arguments">The other arguments.</param>
+            <param name="message">A message to print.</param>
+            <param name="countTo">Counts up to this value, once per second.</param>
+            <param name="unexpectedError">If present, throws an unexpected exception.</param>
+            <param name="expectedError">If present, throws an expected exception.</param>
+            <param name="exitCode">The exit code to return.</param>
+            <param name="cancellationToken">Triggered when Ctrl-C is pressed.</param>
         </member>
     </members>
 </doc>
