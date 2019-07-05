@@ -16,6 +16,13 @@ namespace SampleTool
             _logger = logger;
         }
 
+        /// <summary>
+        /// Does simple things.
+        /// </summary>
+        /// <param name="simpleOption">A simple string option.</param>
+        /// <param name="boolOption">A boolean option.</param>
+        /// <param name="optionalInt">An optional integer.</param>
+        /// <param name="arguments">The other arguments.</param>
         public void ExecuteAsync(string simpleOption, bool boolOption, int? optionalInt, IEnumerable<string> arguments)
         {
             _logger.LogInformation("simpleOption: {Value}", simpleOption);

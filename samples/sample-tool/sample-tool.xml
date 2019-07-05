@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sample-tool</name>
+    </assembly>
+    <members>
+        <member name="M:SampleTool.Program.ExecuteAsync(System.String,System.Boolean,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Does simple things.
+            </summary>
+            <param name="simpleOption">A simple string option.</param>
+            <param name="boolOption">A boolean option.</param>
+            <param name="optionalInt">An optional integer.</param>
+            <param name="arguments">The other arguments.</param>
+        </member>
+    </members>
+</doc>

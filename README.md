@@ -14,6 +14,13 @@ internal class Program
         _logger = logger;
     }
 
+    /// <summary>
+    /// Does simple things.
+    /// </summary>
+    /// <param name="simpleOption">A simple string option.</param>
+    /// <param name="boolOption">A boolean option.</param>
+    /// <param name="optionalInt">An optional integer.</param>
+    /// <param name="arguments">The other arguments.</param>
     public void ExecuteAsync(string simpleOption, bool boolOption, int? optionalInt, IEnumerable<string> arguments)
     {
         _logger.LogInformation("simpleOption: {Value}", simpleOption);
@@ -22,6 +29,23 @@ internal class Program
         _logger.LogInformation("arguments: {Value}", string.Join(",", arguments));
     }
 }
+```
+
+```
+> dotnet run --project .\samples\sample-tool\ -- --help
+sample-tool:
+  Does simple things.
+
+Usage:
+  sample-tool [options] [<arguments>...]
+
+Arguments:
+  <arguments>    The other arguments.
+
+Options:
+  --simple-option <simple-option>    A simple string option.
+  --bool-option                      A boolean option.
+  --optional-int <optional-int>      An optional integer.
 ```
 
 ```

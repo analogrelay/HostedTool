@@ -6,6 +6,10 @@
     <RootNamespace>SampleTool</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Code\anurse\HostedTool\samples\sample-tool\sample-tool.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\src\Contrib.Extensions.Hosting.Tool\Contrib.Extensions.Hosting.Tool.csproj" />
   </ItemGroup>
